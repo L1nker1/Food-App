@@ -1,0 +1,308 @@
+.loading {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(5px) brightness(50%);
+};
+.title {
+    color: rgb(233, 224, 224)
+};
+.font{
+  font-size: small;
+  color: #d4dade;
+}
+.p{
+  color:rgb(255, 255, 255);
+  
+}
+.buttonHealth{
+  color: black;
+  background-color:green;
+  border-radius: 10%;
+}
+
+.buttondiet{
+  color: #b4cd13a1;
+  background-color: #661515;
+}
+
+.summary{
+    color: rgb(209, 154, 46);
+    width: 70%;
+    padding: 10px;
+    margin: auto,
+
+}
+
+.load{
+    background-color: transparent;
+    border-radius: 50%;
+    border: 8px solid #1b4f72a1;
+    border-top-color: transparent ;
+    width: 35px;
+    height: 35px;
+    margin-top: 5%;
+    position: absolute;
+    right: 47%;
+    top: 13%;
+    animation: cargando 1s linear infinite;
+  }
+  
+  @keyframes cargando {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+  }
+  
+  .card{
+    margin: 4% auto;
+    border-radius: 40px;
+    padding: 3%;
+    background-color: #93bd15b4;
+    font-family:'Trebuchet MS';
+    font-size: 1.5rem;
+    text-align: justify;
+    width: 70%;
+    /*box-shadow: 0px 0px 30px 15px #cf7c1d; */
+    margin: 1rem 7rem 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .prevorder{
+    min-height: 100vh;
+    max-height: auto;
+    background-image: url("../../img/italian-cuisine-2378729_1920.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position-y: -100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+/*     margin-bottom: 100px;
+ */  }
+.posimagen{
+  display: flex;
+  justify-content: center;
+}
+.imagen{
+  border-radius: 10rem ;
+  box-shadow:#661515 5px 5px 3px;
+}
+
+.posInfoA{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+
+  .border{
+    border-radius: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 0.1rem;
+    height: auto;
+    width: 65%;
+    -webkit-backdrop-filter: blur(5px) brightness(50%);
+    backdrop-filter: blur(5px) brightness(70%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+  }
+  
+  hr{
+    border: 1px solid #B03A2E;
+  }
+  
+  h1{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    color: #b7b4b3;
+  }
+  
+  .firtsPart{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%;
+    width: 100%;
+  }
+  
+  .firtsPart img{
+    width:50%;
+    border-radius: 20px;
+  }
+  
+  .scores{
+    font-size:1.7rem;
+    width:50%;
+    margin-left: 15%;
+    margin-top: 6%;
+    gap: 10%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .flex{
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .scores p{
+    margin: 2% 0% 2% 0%;
+    color: #25a8ff;
+    font-weight: bold;
+  }
+  
+  .scores p b{
+    color:white;
+  }
+  
+  .scores ul{
+    list-style:square;
+    margin: 0%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+    color: #ffff25;
+  }
+  
+  .secondPart{
+    margin-top: 4%;
+    /*añadir*/
+  }
+  
+  .secondPart h3{
+    color: white;
+    margin-left: 2%;
+    font-size: 1.2rem;
+  }
+  
+  .secondPart p{
+    margin-left: 5%;
+    margin-right: 5%;
+    color: white
+  }
+  
+  .secondPart p b{
+    color: #e2dc37;
+  }
+  .secondPart p a{
+    color: #25a8ff;
+    font-weight: bold;
+  }
+  
+  .secondPart ol li{
+    margin-bottom: 1.5%;
+  }
+  
+  @media (max-width:850px) {
+    .card{
+      font-size: 1.2rem;
+    }
+    h1{
+      font-size: 1.8rem;
+    }
+    
+    .scores{
+      font-size:1.2rem;
+    }
+    
+    .scores ul{
+      font-size: 1rem;
+    }
+    
+    .secondPart h2{
+      font-size: 1.2rem;
+    }
+    .secondPart p{
+      font-size: 1rem;
+    }
+  }
+  @media (max-width:600px) {
+    .card{
+      width: 80%;
+    }
+    h1{
+      font-size: 1.4rem;
+    }
+    
+  .firtsPart{
+    flex-direction: column;
+    align-items: center;
+  }
+  .firtsPart img{
+    width: 80%;
+    margin: 3% 0%;
+  }
+    .scores{
+      font-size:1.1rem;
+      text-align: center;
+    }
+    .scores p{
+      margin-bottom:3% ;
+      text-align: left;
+    }
+    
+    .scores ul{
+      text-align: left;
+    }
+    
+    .secondPart h2{
+      font-size: 1.1rem;
+    }
+    .secondPart p{
+      font-size: .8rem;
+    }
+    ol{
+      padding: 3%;
+    }
+  }
+  
+  @media (max-width:460px) {
+  .card{
+    width: 90%;
+    box-shadow: none
+  }
+  .firtsPart img{
+    width: 70%; 
+  }
+  
+  .scores{
+    font-size:.8rem;
+  }
+  
+  .scores ul{
+    font-size: .8rem;
+    padding: 0% 0% 0% 20%;
+  }
+  .secondPart h2{
+    font-size: .9rem;
+  }
+  .secondPart p{
+    font-size: .7rem;
+  }
+  }
+
+.button{
+    color: #eae3e3;
+    background-color:#661515 ;
+    padding: 1%;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: row;
+}

@@ -1,0 +1,341 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0.8rem 0.5rem 0.8rem;
+    flex-wrap: wrap;
+}
+  .search,
+  .option {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+  
+  .search input {
+    margin-right: 1rem;
+    padding: 10px 5px;
+    width: 70%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-family: Georgia;
+    background-color: #b03a2e;
+    color: rgb(255, 255, 255);
+  }
+  
+  .search input::placeholder {
+    color: #ffffffc0;
+  }
+  
+  .search button {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #d56020;
+    border: none;
+    color: #000000;  /* color boton search*/
+    font-weight: bolder;
+    font-size: 1.2rem;
+    box-shadow: 1px 1px 1px black;
+    transition: background-color 0.5s;
+  }
+  
+  .search button:hover {
+    background-color: #b4beb8;  /* color al pasar mouse*/
+    color: #1b4f72;
+    transition: background-color 1s;
+  }
+  .search button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+  
+  .option select {
+    margin: 0.2rem 0.3rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+    outline: none;
+    background-color: #b03a2e;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .option select option {
+    background-color: #661515; /*fondo del option*/
+    color: #d3d7da;
+    font-weight: bold;
+    width: min-content;
+  }
+  
+  .option button,
+  .All button {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 9px 1px;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    color: #000000;
+    background-color: #d6d9dc;
+    box-shadow: 1px 1px 1px black;
+    transition: background-color 1s;
+  }
+  .option button:hover {
+    background-color: #a7adaa;
+    color: #a5a7a9;
+    transition: background-color 1s;
+  }
+  
+  .option button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+  
+  .All {
+    width: 100%;
+    text-align: right;
+    margin: 0 auto;
+  }
+  .All button {
+    width: 7%;
+    padding: 8px 0px;
+  }
+  
+  .All button:hover {
+    background-color: #8c8f8d;
+    color: #898989;
+    transition: background-color 1s;
+  }
+  
+  .All button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+  .test{
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+  }
+  @media (max-width: 1470px) {
+    .search,.option{
+      width: max-content;
+    }
+    .search input {
+      width: 100%;
+    }
+  }
+  @media (max-width: 1190px) {
+    .search {
+      width: 35%;
+    }
+    .search input {
+      width: 100%;
+      margin-right: 0.5rem;
+      font-size: 1rem;
+    }
+  
+    .search button {
+      font-size: 1rem;
+    }
+    .option {
+      width: min-content;
+    }
+  
+    .option select {
+      font-size: 0.8rem;
+      width: 180px;
+    }
+  
+    .option select option {
+      font-size: 0.8rem;
+    }
+  
+    .option button,
+    .All button {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (max-width: 960px) {
+    .header {
+      flex-direction: column;
+    }
+    .search {
+      width: 50%;
+      margin-bottom: 2%;
+    }
+  
+    .option button,
+    .All button {
+      font-size: 0.9rem;
+      width: max-content;
+    }
+  
+    .All {
+      width: 100%;
+      text-align: center;
+      margin-top: 2%;
+    }
+  
+    .All button {
+      width: 30%;
+      margin: 0%;
+      padding: 1.5% 3%;
+    }
+  }
+  @media (max-width: 665px) {
+    .search {
+      width: 70%;
+      text-align: left;
+    }
+    .search input {
+      width: 65%;
+      padding: 2% 1%;
+    }
+    .search button {
+      font-size: 0.8rem;
+    }
+  
+    .option button {
+      font-size: 0.8rem;
+    }
+  
+    .option select {
+      font-size: 0.7rem;
+      width: min-content;
+    }
+  
+    .option select option {
+      font-size: 0.8rem;
+    }
+  }
+  @media (max-width: 570px) {
+    .search {
+      width: 100%;
+      justify-content: flex-start;
+    }
+    .search input {
+      width: 60%;
+      padding: 1.5% 1%;
+    }
+    .search button {
+      font-size: 0.8rem;
+    }
+  
+    .option {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: 100%;
+    }
+  
+    .option button {
+      width: 10%;
+    }
+  
+    .All {
+      text-align: left;
+      
+    }
+    .All button{
+      margin-left: 1%;
+    }
+  }
+  
+  @media (max-width: 540px) {
+    .search input {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 510px) {
+    .option {
+      flex-direction: column;
+    }
+    .option select {
+      font-size: 0.8rem;
+      width: 90%;
+    }
+  
+    .option button {
+      width: 90%;
+    }
+  
+    .search {
+      justify-content: center;
+      margin-bottom: 7%;
+    }
+    .search input {
+      width: 70%;
+      padding: 2% 1%;
+    }
+  
+    .All {
+      text-align: center;
+      margin-bottom: 10%;
+    }
+  
+    .All button {
+      width: 90%;
+      margin: 0%;
+    }
+  }
+  
+  @media (max-width: 370px) {
+  
+    .option select {
+      width: 95%;
+    }
+  
+    .option button {
+      width: 95%;
+    }
+  
+    .search input {
+      width: 70%;
+    }
+    .All button{
+      width: 95%;
+      padding: 2% 0%;
+    }
+  }
+  
+  @media (max-width: 285px) {
+    .option {
+      justify-content: center;
+      align-items: flex-start;
+    }
+  
+    .option select {
+      width: 100%;
+      align-self: flex-start;
+      font-size: 0.7rem;
+      margin: 1% 0%;
+    }
+  
+    .option button {
+      width: 100%;
+      margin-top: 2%;
+    }
+  
+    .search input {
+      width: 70%;
+    }
+  
+    .search button {
+      font-size: 0.7rem;
+    }
+    .All button{
+        width: 100%;
+        padding: 3% 0%;
+    }
+  }
+  

@@ -1,0 +1,95 @@
+.bg{
+  background-color: #d51111;
+}
+.cards {
+    text-align: justify;
+    font-size: 1.0rem;
+    font-family: serif;
+    margin: 3% 2% 4% 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .buttons {
+    margin: 5% 2% 0% 2%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1%;
+  }
+  
+  .buttons button {
+    font-family: Georgia;
+    padding: 9px 0px;
+    font-size: 3rem;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 3%;
+    border: none;
+    color: #bbc8c1;
+    background-color: #1b4f72;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+    transition: background-color 0.5s;
+  }
+  .buttons button:hover {
+    background-color: #090807;
+    color: #d51111;
+    transition: background-color 1s;
+  }
+  
+  .buttons button:active {
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+  
+  @media (max-width: 1190px) {
+    .cards {
+      gap: 2rem;
+      font-size: 1.3rem;
+    }
+  }
+  @media (max-width: 940px) {
+    .buttons button {
+      padding: 5px 0px;
+      width: 4%;
+    }
+    .buttons{
+      gap: .5%;
+      justify-content: space-around;
+    }
+  }
+  
+  @media (max-width: 780px) {
+    .cards {
+      justify-content: space-around;
+      gap: 2rem 0rem;
+    }
+    .buttons{
+      gap: 0%;
+    }
+  }
+  
+  @media (max-width: 665px) {
+  .cards{
+    font-size: 1.2rem;
+  }
+  }
+  
+  @media (max-width: 540px) {
+  
+    .buttons{
+      gap: 5%;
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 370px) {
+  .cards{
+    margin-top: 10%;
+  }
+  }

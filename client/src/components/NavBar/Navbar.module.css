@@ -1,0 +1,136 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    color: black;
+    background-color: #661515;
+  }
+  
+  .logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  
+  .logo img {
+    width: 20%;
+  }
+  
+  .logo p,
+  .enlaces {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Brush Script MT;
+    color: #cfcfc8;
+    box-shadow:#e32413 2px 2px 2px;
+    ;
+  }
+  
+  .rutas {
+    text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    gap: 4%;
+    margin-right: 3rem;
+  }
+  
+  .enlaces {
+    text-decoration: none;
+    font-family: Times;
+    font-size: 1.7rem;
+    position: relative;
+  }
+  
+  .enlaces::after {
+    content: "";
+    position: absolute;
+    width: 10%;
+    background-color: #d04205;
+    height: 5px;
+    top: 101%;
+    left: 0%;
+    border-radius: 10px;
+    transition: width 0.5s;
+  }
+  
+  .enlaces:hover::after {
+    width: 100%;
+    transition: width 0.5s;
+  }
+   
+  
+  
+  @media (max-width: 665px) {
+    .logo img {
+      width: 20%;
+    }
+  
+    .logo p,
+    .enlaces {
+      font-size: 1.3rem;
+    }
+    .navigation {
+      padding: 0.1rem;
+    }
+  
+    .rutas {
+      gap: 4%;
+      margin-right: 1rem;
+    }
+  
+  }
+  
+  @media (max-width: 490px) {
+    .logo img {
+      width: 19%;
+    }
+  
+    .logo p,
+    .enlaces {
+      font-size: 1.1rem;
+    }
+  
+    .rutas {
+      gap: 6%;
+      margin-right: 1rem;
+    } 
+  }
+  
+  @media (max-width: 370px) {
+    .logo p,
+    .enlaces {
+      font-size: 1rem;
+    }
+  
+    .rutas {
+      gap: 5%;
+      margin-right: .8rem;
+    }
+  
+  }
+  
+  @media (max-width: 285px) {
+    
+  .logo {
+    gap: .5rem;
+    margin-left: .5rem;
+    width: 30%;
+  }
+  .logo p, .enlaces{
+    font-size: .8rem;
+  }
+  
+  .rutas {
+    margin-right: .1rem;
+    width: 60%;
+    gap: 7%;
+    
+  } 
+  
+  }
